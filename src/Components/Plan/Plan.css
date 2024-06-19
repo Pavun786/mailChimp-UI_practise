@@ -1,0 +1,154 @@
+.plan-container{
+    display: flex;
+}
+
+.plan-sub1{
+  width: 65%;
+  text-align: left;
+  margin-left: 40px;
+  margin: 40px;
+ 
+}
+.plan-sub2{
+    width:35% ;
+}
+
+.plan-subChild{
+    display: flex;
+    gap: 40px;
+    /* justify-content: center; */
+}
+
+.plan-heading{
+    font-size:40px;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    
+}
+
+.plan-desc{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.plan-nested{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.plans{
+    margin-top: 20px ;
+}
+
+.plan-sub2{
+    box-shadow: -1px 0px 10px 0px rgba(0,0,0,0.3);
+    margin: 40px;
+    text-align: left;
+    padding: 20px;
+    width: 30%;
+    /* height: 400px; */
+}
+
+.plan-subhead{
+   font-size: 30px;
+   font-weight: 500;
+}
+
+.plan-lt{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    gap:5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.plan-input{
+  
+  padding: 7px;
+  font-size: 15px;
+} 
+
+.plan-btn{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    background-color: yellow;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-top: 20px;
+} 
+
+.plan-foot{
+    margin-top: 10px;
+}
+
+@media screen and (min-width:770px) and (max-width:990px) {
+
+
+ .plan-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-sub1{
+    width: 80%;
+    margin: 80px;
+   
+  }
+
+  .plan-sub2{
+    box-shadow: -1px 0px 10px 0px rgba(0,0,0,0.3);
+    width: 80%;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+   
+}
+
+  .plan-sub2:nth-child(1){
+
+     grid-column: 1/2;
+     grid-row: 1/2;
+  }
+
+  .plan-sub2:nth-child(2){
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+ }
+
+ .plan-foot{
+
+    grid-column: 1/4;
+    grid-row: 2/3;
+   
+   
+ }
+}
+
+@media screen and (max-width:770px) {
+
+    .plan-container{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .plan-sub1{
+        width: 80%;
+        margin: 40px;
+       
+      }
+    
+      .plan-sub2{
+       width: 80%;
+      
+    }
+
+    .plan-subChild{
+        display: none;
+    }
+    
+    
+}

@@ -1,0 +1,34 @@
+.contact-container{
+    background-color: rgb(240, 191, 100);
+}
+
+.contact-sub1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+
+.contact-sub2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px;
+    text-align: left;
+    gap: 20px;
+}
+
+.sub2-child{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sub2-heading{
+    font-size: 20px;
+
+}

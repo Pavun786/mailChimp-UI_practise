@@ -1,0 +1,232 @@
+.Navbar-container{
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color:aliceblue;
+    height: 60px;
+    
+}
+
+.Navbar-sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 30px
+}
+
+.Nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    height:150px;
+    object-fit: contain;
+}
+
+.nav-btn1,.nav-btn2{
+    
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    
+}
+
+#nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn2{
+    background-color:yellow;
+}
+
+.bi-chevron-down,.bi-chevron-up,.bi-globe-americas{
+    margin: 5px;
+}
+
+.dropClose,.drop2Close{
+    display: none;
+   
+}
+
+.dropOpen,.drop2Open{
+    
+   display: block;
+}
+
+.drop-sub2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.stickyOpen{
+    display: block;
+}
+
+.stickyClose{
+    display: none;
+}
+
+.stickbar-container{
+    /* background-color:bisque; */
+   
+    /* height: 100vh;
+    width: 300px;
+    float: right; */
+   
+    box-shadow: -1px 0px 10px 0px rgba(0,0,0,0.3);
+
+    position:absolute;
+    z-index: 10;
+    background-color:white;
+    width: 40%;
+ margin-left:60%;
+ height: 100vh;
+ 
+ 
+}
+
+.stickbar-sub{
+     
+}
+
+.stick-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    /* gap:60px; */
+    font-weight:500;
+    font-size: 18px;
+    /* margin-top: 70px; */
+}
+
+#stick-item{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.st-btns{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+.stick-btn1,.stick-btn2{
+    padding: 10px;
+    margin: 5PX;
+    font-size: 15PX;
+    border-radius: 20px;
+}
+
+.stick-btn2{
+    background-color: yellow;
+}
+
+.close-icon{
+    display: flex;
+    justify-content: space-between;
+  
+    margin: 25px;
+    align-items: center;
+   
+    font-size: 25px;
+    /* margin-right: 20px; */
+    margin-top: 10px;
+   }
+
+/* #stick-item :nth-child(2){
+    text-align: start;
+} */
+
+#close{
+    display: none;
+
+}
+
+.stickbar-title{
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.stickbar-subtitle{
+    margin: 15px;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.stickbar-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.back-btn{
+   font-size: 20px;
+   margin-left: 1px; 
+   
+}
+
+.bi-chevron-left{
+   margin: 10px;
+}
+
+/* #Stickyopen{
+    display: block;
+} */
+
+@media screen and (max-width : 1270px) {
+    #nav-item,.Nav-item,.nav-btn2{
+       display: none;  
+    } 
+
+    .nav-child,.bi-list{
+        display: block;
+         
+    }
+    .bi-list{
+       font-size: 35px;
+    }
+}
+
+@media screen and (min-width : 1271px) {
+    /* #nav-item,.Nav-item,.nav-btn2{
+       display: none;  
+    }  */
+
+    .nav-child,.bi-list{
+        display:none;
+    }
+}
+
+@media screen and (max-width : 750px) {
+    .nav-btn1{
+        display: none;
+    }
+
+    .stickbar-container{
+      position:absolute;
+      z-index: 10;
+      background-color:white;
+      width: 60%;
+      margin-left:40%;
+      height: 100vh;
+    }
+}

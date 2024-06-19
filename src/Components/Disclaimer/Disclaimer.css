@@ -1,0 +1,12 @@
+.disclaimer-container{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 40px;
+    background-color: rgb(212, 208, 208);
+}
+
+
+.dis-map{
+    /* display: flex; */
+}

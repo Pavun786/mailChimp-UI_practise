@@ -1,0 +1,75 @@
+.integ-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+.map-inte{
+    display: flex;
+    width:400px;
+    height: auto;
+}
+
+.inte-img{
+    width: 100px;
+    height:100px;
+    object-fit: cover;
+}
+
+.inte-sub{
+   text-align: left;
+   margin-left: 20px;
+   margin-top: 10px;
+}
+
+.inte-heading{
+    width: 70%;
+    margin: auto;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    
+}
+
+.inte-sub :nth-child(1){
+    font-weight:550;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width : 590px) {
+
+    .inte-heading{
+        width: 70%;
+        margin: auto;
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    
+    .integ-container{
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+        margin: 30px; */
+        margin: 40px;
+    }
+
+    .map-inte{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+       
+    }
+
+    .inte-sub :nth-child(2){
+        display: none;
+    }
+
+    .inte-sub{
+        text-align: center;
+    }
+}
